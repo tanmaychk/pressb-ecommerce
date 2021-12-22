@@ -10,7 +10,7 @@ export const Navbar = () => {
         <>
             <AppBar position='fixed' className={classes.appbar} color='inherit'>
                 <Toolbar>
-                    <Typography variant="h5" className={classes.title} color="inherit">
+                    <Typography variant="h6" className={classes.title} color="inherit">
                         <img src ={logo} alt="commerce.js"  height ='25px' className={classes.image} />
                         The Drip Store
                     </Typography>

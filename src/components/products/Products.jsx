@@ -3,13 +3,13 @@ import {Grid} from '@material-ui/core';
 
 import Product from './product/product';
 
-const products=[
+/*const products=[
     {id:1 ,name:'shoes',description:'nike shoes',price:'$10',image:'revolt-164_6wVEHfI-unsplash.jpg'},
     {id:2,name:'macbook',description:'Apple macbook',price:'$10',image: 'dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg'},
     {id:3 , name:'basketball',description:'NBA basketball',price:'$3',image:'ruslan-ruslan-AhAMJgq5QPM-unsplash.jpg'},
-];
+];*/
 
-const Products = () => {
+const Products = ({products}) => {
     return(
     <main>
         <Grid container justify='center' spacing={4}>
