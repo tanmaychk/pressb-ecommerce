@@ -1,9 +1,9 @@
 import React ,{useState,useEffect} from 'react';
 import {commerce} from './lib/commerce';
 import {Products , Navbar , Cart} from './components';
-import {BrowserRouter as router,Switch, Route, Router} from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 const App = () => {
-    const [products,setProducts] = useState([]);
+    const [products,setProducts] = useState({});
     const [cart,setCart]=useState({});
     
     const fetchProducts = async() =>{
@@ -25,25 +25,17 @@ const App = () => {
         fetchCart();
     },[]);
 
-    console.log(cart);
     return (
         <Router>        
-        <div>
-            <Navbar  totalItems={cart.total_items}/>
-            <Switch>
-                <Route exact path='/'>
-
-                </Route>
-
-                <Route>
-                    
-                </Route>
-            <Products products={products}  onAddToCart={handleAddToCart} />
-            <Cart cart={cart}/>
-            </Switch>
-        </div>
+            <div>
+                <Navbar  totalItems={cart.total_items}/>
+                <Routes>
+                    <Route path="/" element={<Products products={products} onAddToCart={{handleAddToCart}}/>}/>
+                    <Route path="/cart" element={<Cart cart={cart}/>}/>
+                </Routes>
+            </div>
         </Router>
-    )
+    );
 }
 
 export default App
