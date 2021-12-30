@@ -1,28 +1,31 @@
 import React from 'react';
-import {AppBar,Toolbar,IconButton,Badge,MenuItem,Menu,Typography} from '@material-ui/core';
+import {AppBar,Toolbar,IconButton,Badge,Typography} from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import logo from '../../assets/1f976.svg';
 import useStyles from "./styles"
+import { Link,useLocation } from 'react-router-dom';
 
 export const Navbar = ({totalItems}) => {
     const classes = useStyles();
+    const location=useLocation();
     return (
         <>
             <AppBar position='fixed' className={classes.appbar} color='inherit'>
                 <Toolbar>
-                    <Typography variant="h6" className={classes.title} color="inherit">
+                    <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
                         <img src ={logo} alt="commerce.js"  height ='25px' className={classes.image} />
                         The Drip Store
                     </Typography>
                     <div classname={classes.grow}/>
+                    {location.pathname ==='/' &&(
                     <div classname={classes.button}>
-                        <IconButton aria-label='show cart items' color='inherit'>
+                        <IconButton component={Link} to="/cart" aria-label='show cart items' color='inherit'>
                             <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart />
                             </Badge>
 
                         </IconButton>
-                    </div>
+                    </div>)}
 
                 </Toolbar>
             </AppBar>   
