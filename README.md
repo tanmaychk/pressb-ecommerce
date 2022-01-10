@@ -1,6 +1,6 @@
-# Native (A E-commerce Website)
+# Press B (A E-commerce Website)
 
-Native is a ecommerce website made with ReactJS, CommerceJS API , MaterialUI & Stripe.
+Press B is a ecommerce website made with ReactJS, CommerceJS API , MaterialUI & Stripe.
 
 ## Have a look
 
