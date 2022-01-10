@@ -11,8 +11,8 @@ The design and idea all belongs to [JavaScript Mastery](https://www.youtube.com/
 
 
 ## What did i learn
-going into the project i had no prior knowledge of react , although the project has shown me the jist of why people hype around react i still have much more to learn about it.This being my first kind of medium size development i followed JSM to some extent but as the video is over a year old so were the packages and dependencies that the site was intially working on so i had to figure out sometimes to work around some errors and as a result i now know how good one has to be error handling and managment.
-I had a lot of fun making this project, although it took me a month to follow and make this app i would like to add additionaly add extra features and make updates to the basic looking UI.
+I had no prior understanding of react when I started the project, and while it has shown me the gist of why people are so enthusiastic about it, I still have a lot to learn about it. As this was my first experience with a medium-sized development, I followed JSM to some extent, but because the video  , packages and dependencies that the site was built on were over a year old, I had to figure out how to work around some errors, and as a result, I now understand how important error handling and management are.
+I had a lot of fun working on this project, and despite the fact that it took me a month to complete, I would like to add extra features and make updates to the basic looking UI.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
