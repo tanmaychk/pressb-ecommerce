@@ -1,3 +1,4 @@
+![](public/temp.PNG)
 # Press B (A E-commerce Website)
 
 Press B is a ecommerce website made with ReactJS, CommerceJS API , MaterialUI & Stripe.
